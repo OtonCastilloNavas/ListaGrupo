@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ListaGrupo</string>
+    <string name="title_activity_main_estudiante">MainEstudianteActivity</string>
+</resources>
