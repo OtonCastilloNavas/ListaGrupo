@@ -18,7 +18,9 @@ public class GrupoActivity extends AppCompatActivity {
     {
         EditText etNombre=(EditText) findViewById(R.id.etNombre);
         Intent intent = new Intent();
-        //intent.putExtra("grupo",);
+        Grupo grupo = new Grupo();
+        grupo.setNombreGrupo(etNombre.getText().toString());
+        intent.putExtra("grupo",grupo);
         setResult(RESULT_OK,intent);
         finish();
     }
