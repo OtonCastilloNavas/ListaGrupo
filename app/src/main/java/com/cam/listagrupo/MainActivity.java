@@ -43,7 +43,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-
+        Intent intent =
+                new Intent(this, GrupoActivity.class);
+        startActivityForResult(intent,312);
         return super.onOptionsItemSelected(item);
     }
 

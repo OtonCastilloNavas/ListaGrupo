@@ -12,7 +12,7 @@ import static android.arch.persistence.room.ForeignKey.CASCADE;
         childColumns = "idGrupo", onDelete = CASCADE,
         onUpdate = CASCADE))
 public class Estudiante {
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     private int idEstudiante;
     private String  nombreEstudiante;
     private int idGrupo;

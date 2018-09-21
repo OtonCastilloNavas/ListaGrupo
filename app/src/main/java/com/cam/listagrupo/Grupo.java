@@ -8,7 +8,7 @@ import java.io.Serializable;
 @Entity
 public class Grupo implements Serializable {
 
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     private int idGrupo;
     private String nombreGrupo;
 

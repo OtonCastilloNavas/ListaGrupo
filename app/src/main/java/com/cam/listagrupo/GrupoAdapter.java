@@ -12,7 +12,7 @@ import android.widget.TextView;
 import java.util.List;
 
 public class GrupoAdapter extends ArrayAdapter {
-   private List grupos;
+   private List<Grupo> grupos;
    private int resource;
    private Context context;
     public GrupoAdapter(@NonNull Context context, int resource, @NonNull List objects) {
@@ -28,7 +28,7 @@ public class GrupoAdapter extends ArrayAdapter {
         convertView= LayoutInflater.from(this.context).inflate(this.resource,parent,false);
         TextView tvNombre=(TextView) convertView.findViewById(R.id.tvNombre);
         TextView tvCantidad=(TextView) convertView.findViewById(R.id.tvCantidad);
-        //tvNombre.setText();
+        tvNombre.setText(grupos.get(position).getNombreGrupo());
         //tvCantidad.setText(String.valueOf());
         return convertView;
     }
